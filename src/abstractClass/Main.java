@@ -9,6 +9,5 @@ public class Main {
 		List<Thing> allThings = new ArrayList<>();
 		Bike bike = new Bike("Giant ", 1, true, true);
 		allThings.add(bike);
-		System.out.println(bike.name);
 	}
 }
