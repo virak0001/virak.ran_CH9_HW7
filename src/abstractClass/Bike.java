@@ -5,12 +5,14 @@ public class Bike extends Thing {
 	private boolean isFrontBreakWorking = true;
 	private boolean isBackBreakWorking = true;
 	@Override
-	public void isValid() {
+	public boolean isValid() {
+		boolean isNotvalid = false;
 		if(age < 2) {
 			if(isBackBreakWorking | isFrontBreakWorking) {
 				
 			}
 		}
+		return isNotvalid;
 	}
 	Bike(String name, int age, boolean isFrontBreakWorking, boolean isBackBreakWorking){
 		super();

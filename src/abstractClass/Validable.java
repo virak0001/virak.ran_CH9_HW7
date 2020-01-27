@@ -1,5 +1,5 @@
 package abstractClass;
 
 public interface Validable {
-	abstract void isValid();
+	abstract boolean isValid();
 }
