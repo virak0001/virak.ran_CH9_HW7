@@ -8,10 +8,8 @@ public class Bike extends Thing {
 	@Override
 	public boolean isValid() {
 		boolean result = false;
-		if(age < 2) {
-			if(isBackBreakWorking | isFrontBreakWorking) {
+		if(age < 2 && isBackBreakWorking | isFrontBreakWorking) {
 				result = true;
-			}
 		}
 		return result;
 	}
@@ -23,4 +21,6 @@ public class Bike extends Thing {
 		this.isBackBreakWorking = isBackBreakWorking;
 	}
 	
-}
+	
+	}
+
